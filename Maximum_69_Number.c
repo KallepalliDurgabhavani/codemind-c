@@ -2,8 +2,9 @@
 int main()
 {
     char s[100];
+    int i;
     scanf("%s",&s);
-    for(int i=0;s[i]!=NULL;i++)
+    for (i=0;s[i]!=NULL;i++)
     {
         if(s[i]=='6')
         {
