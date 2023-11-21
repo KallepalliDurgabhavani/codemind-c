@@ -1,27 +1,27 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,s=0,e=0,o=0,r;
+    int n,c=0,s=0,o=0,r;
     scanf("%d",&n);
     while(n!=0)
     {
         r=n%10;
-        s=s+1;
-        n=n/10;
+        c=c+1;
         if(r%2==0)
         {
-            e=e+1;
+            s++;
         }
-        else
+        else if(r%2!=0)
         {
-            o=o+1;
+            o++;
         }
+        n=n/10;
     }
-    if(e==s)
+    if(c==s)
     {
         printf("Even");
     }
-    else if(o==s)
+    else if(c==o)
     {
         printf("Odd");
     }
@@ -30,4 +30,3 @@ int main()
         printf("Mixed");
     }
 }
-    
