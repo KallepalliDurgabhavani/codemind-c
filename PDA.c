@@ -1,20 +1,20 @@
 #include<stdio.h>
 int main()
 {
-    int n,t,i,r=0;
+    int n,i,s=0;
     scanf("%d",&n);
-    for(i=1;i<n;i++)
+    for(int i=1;i<n;i++)
     {
         if(n%i==0)
         {
-           r=r+i; 
+            s=s+i;
         }
     }
-    if(n==r)
+    if(s==n)
     {
         printf("PERFECT");
     }
-    else if(r>n)
+    else if(s>n)
     {
         printf("ABUNDANT");
     }
