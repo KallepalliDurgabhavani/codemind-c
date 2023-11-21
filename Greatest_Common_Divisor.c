@@ -1,12 +1,15 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-    int m,n,max,i;
-    scanf("%d%d",&m,&n);
-     for( i = 1; i <= m && i <= n; ++i)  
-    {  
-        if (m % i ==0 && n % i == 0)  
-            max= i;
+    int n1, n2, i, gcd;
+
+    scanf("%d %d", &n1, &n2);
+
+    for(i=1; i <= n1 && i <= n2; ++i)
+    {
+        if(n1%i==0 && n2%i==0)
+            gcd = i;
     }
-    printf("%d",max);
+
+    printf("%d",gcd);
 }
