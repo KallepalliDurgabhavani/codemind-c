@@ -1,18 +1,17 @@
 #include<stdio.h>
 int main()
 {
-    int n;
+    int i;
     while(1)
     {
-        scanf("%d",&n);
-        if(n==-1)
+        int s;
+        scanf("%d",&s);
+        if(s==-1)
         {
             break;
         }
-        else
-        {
-            printf("%d
-",n*n);
-        }
+        printf("%d
+",s*s);
+        
     }
 }
