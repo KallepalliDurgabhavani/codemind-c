@@ -1,60 +1,46 @@
 #include<stdio.h>
 int main()
 {
-    float b,c,sur,total;
-    int u;
-    scanf("%d",&u);
-    printf("Units Consumed: %d
-",u);
-    if(u<199)
+    int n;
+    scanf("%d",&n);
+    float bill,cost,sur;
+    if(n<=199)
     {
-        b=u*1.20;
-        printf("Cost per Unit: 1.20
-");
-        printf("Bill: %0.2f
-",b);
+        cost=1.20;
+        bill=cost*n;
     }
-    else if(u>=200 && u<400)
+    else if(n>=200 && n<400)
     {
-         b=u*1.40;
-        printf("Cost per Unit: 1.40
-");
-        printf("Bill: %0.2f
-",b);
+        cost=1.40;
+        bill=cost*n;
     }
-    else if(u>=400 && u<600)
+     else if(n>=400 && n<600)
     {
-         b=u*1.60;
-        printf("Cost per Unit: 1.60
-");
-        printf("Bill: %0.2f
-",b);
+        cost=1.60;
+        bill=cost*n;
     }
-    else if(u>=600 && u<800)
+     else if(n>=600 && n<800)
     {
-        b=u*1.80;
-        printf("Cost per Unit: 1.80
-");
-        printf("Bill: %0.2f
-",b); 
+        cost=1.80;
+        bill=cost*n;
     }
     else
     {
-         b=u*2.00;
-        printf("Cost per Unit: 2.00
-");
-        printf("Bill: %0.2f
-",b);
+        cost=2.00;
+        bill=cost*n;
     }
-    if (b>400)
+    if(bill>400)
     {
-        sur=b*0.15;
-        printf("Surcharge: %0.2f
+        sur=bill*0.15;
+    }
+    printf("Units Consumed: %d
+",n);
+    printf("Cost per Unit: %0.2f
+",cost);
+    printf("Bill: %0.2f
+",bill);
+    printf("Surcharge: %0.2f
 ",sur);
-    }
-    else{
-        printf("Surcharge: 0.00
-");
-    }
-    printf("Total Amount: %0.2f",b+sur);
+    printf("Total Amount: %0.2f",sur+bill);
+    
 }
