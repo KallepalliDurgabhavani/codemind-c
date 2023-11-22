@@ -1,8 +1,9 @@
 #include<stdio.h>
 int main()
 {
-    float a,b,c;
-    scanf("%f%f",&a,&b);
-    c=(a+b)/2;
-    printf("Average of %0.f and %0.f is: %0.2f",a,b,c);
+    float avg;
+    int a,b;
+    scanf("%d%d",&a,&b);
+    avg=(a+b)*0.5;
+    printf("Average of %d and %d is: %0.2f",a,b,avg);
 }
